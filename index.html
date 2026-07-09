@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <!-- navbar html -->
+    <nav>
+         <ul class="sidebar">
+            <li onclick= hideSideBar()>
+                <a>
+                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" 
+                 fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a>
+            </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#sermons">Sermon</a></li>
+                <li><a href="#event">Event</a></li>
+                <button >Donate to us</button>
+            </ul>
+        <div class="navbar">
+            <div class="logo"><a href="#home">USM Church</a></div>
+            <ul class="menu">
+                <li class="hide"><a href="#about">About</a></li>
+                <li class="hide"><a href="#sermons">Sermon</a></li>
+                <li class="hide"><a href="#event">Event</a></li>
+            </ul>
+            <button class="Donate hide" >Donate to us</button> 
+            <li  class= "menu-btn" onclick= showSideBar()>
+                <a href="#">
+                   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                   fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> 
+                </a>
+            </li> 
+            
+        </div>
+            
+    </nav>
+    <section id="home">
+        <div class="intro">
+          <h1>Faith.Family.Community</h1>
+          <p>
+             Join USM church and be part of a community that grows in <br/>
+             faith support one another and makes a difference together.
+          </p>
+
+          <button class="Donate">
+            Donate to us
+          </button>
+            
+        </div>
+        
+    </section>
+    <section id="about">
+        <div class="segment">
+            <h2>Love God.</h2>
+            <h2>Love People</h2>
+            <h2>Change the World</h2>
+            <button>Learn More About Us</button>
+        </div>
+
+        <div class="message"> 
+            <h2>Our Mission to Share Faith and Love with the World</h2>
+            <p >
+                We’re a community built on faith, love, and a genuine desire to make a difference. 
+                What started as a small group of believers has grown into a vibrant family
+                dedicated to spreading hope and serving others.
+                Every gathering, outreach, and act of kindness reflects our 
+                commitment to live out the message of Christ and bring light to those who need it most.
+            </p>
+        </div>
+    </section>
+    
+    <div class="about-img">
+        <img src="./images/hug.jpg" >
+    </div>
+
+    <section id="sermons">
+        <div class="bar">
+            <diV></diV> USM CHURCH
+        </div>
+        <h2> Watch Our Sermons on <span>YouTube</span></h2>
+        <h4> Join Our Sunday Sections</h3>
+        <div class="container">
+            <div class="infor">
+                <h3>Experience Life-Changing Messages Every Week</h3>
+                <p>
+                   Join us on Youtube for inspiring sermons that uplift your spirit
+                   strengthen your faith, and help you grow in you walk with God.
+                   Every message is a Chance to learn, reflect and draw closer to Him.
+                </p>
+                <button><a>Watch on Youtube</a></button>
+            </div>
+            
+            <div class="sermon-img">
+                <img src="./images/sermon.jpg">
+            </div>
+        </div>      
+    </section>
+
+    <!--Event  -->
+
+    <section id="event">
+        <div class="marker">
+            <div></div>Event
+        </div>
+        <h2>Upcoming Event</h2>
+        <div class="note">
+            <p>
+               There’s always something happening at OneChurch. From worship 
+               nights to community gatherings,
+               our events are all about faith, connection, and growth. 
+               Find a moment to join in and be part
+               of what God is doing in our church family.
+            </p> 
+            <button>See All Event</button>
+        </div> 
+        
+        <div class="catergory">
+            <div>
+                <img src="./images/childeren.jpg">
+                <date> Every Sunday</date>
+                <p class="sub">Children Service</p>
+            </div>
+            <div>
+                <img src="./images/christmas.jpg">
+                <date> 29th December</date>
+                <p class="sub">Christmas Dinner </p>
+            </div>
+            <div>
+                <img src="./images/bible studies.jpg">
+                <date> Every First Sunday of Every month</date>
+                <p class="sub">Bible Studies</p>
+            </div>
+            <div>
+                <img src="./images/Praises.jpg">
+                <date>Every Sunday</date>
+                <p class="sub">Praises and Worship</p>
+            </div>
+            <div>
+                <img src="./images/youth.jpg">
+                <date>Every month</date>
+                <p class="sub">Youth service</p>
+            </div>
+            <div>
+                <img src="./images/worship.jpg">
+                <date>Every friday</date>
+                <p class="sub">Friday worship and teachings</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="youtube">
+        <div class="contact-box">
+            <div class="contact">
+                <diV></diV>YouTube
+            </div>
+            <h2> <span>YouTube </span> Recent USM Preachings</h2>
+        </div>
+        <div class="yt">
+
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="box">
+            <div class="description">
+               <h2>USM Church</h2>
+               <p>A Place to Belong, Believe and Become.</p>
+                <ul>
+                  <li><a href="#"><i class="fa-brands fa-facebook"></i></a></i></li>
+                  <li><a href="#"><i class="fa-brands fa-instagram"></i></a></i></li>
+                  <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="Con">
+                <h3> Contact Info</h3>
+                <p></p>
+                <p></p>
+                <p></p>z
+            </div>
+        </div>
+
+        <div class="end-footer">
+            <h3> @2025USMChurch. All rights reserved.</h3>
+            <p>Built By</p>
+        </div>
+    </footer>
+   
+
+
+</body>
+<script src="./script.js"></script>
+</html>
