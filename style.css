@@ -1,7 +1,60 @@
-/* font family links */
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+
+    :root {
+      /* Colors */
+      --color-primary: rgb(186, 11, 11);
+      --color-primary-dark: rgb(153, 23, 23);
+      --color-primary-light: rgb(207, 45, 45);
+      --color-secondary: rgb(63, 62, 62);
+      --color-text-primary: #1f1f1f;
+      --color-text-light: #fff;
+      --color-text-muted: #666;
+      --color-background: #fff;
+      --color-background-dark: #000;
+      --color-background-section: #242323;
+      
+      /* Typography */
+      --font-family-primary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-weight-light: 300;
+      --font-weight-regular: 400;
+      --font-weight-medium: 500;
+      --font-weight-semibold: 600;
+      --font-weight-bold: 700;
+      --font-weight-extrabold: 800;
+      
+      /* Spacing */
+      --spacing-xs: 0.5rem;
+      --spacing-sm: 1rem;
+      --spacing-md: 1.5rem;
+      --spacing-lg: 2rem;
+      --spacing-xl: 3rem;
+      --spacing-2xl: 5rem;
+      
+      /* Border Radius */
+      --radius-sm: 0.5rem;
+      --radius-md: 0.9rem;
+      --radius-lg: 1.2rem;
+      --radius-xl: 1.5rem;
+      --radius-full: 50%;
+      
+      /* Transitions */
+      --transition-fast: 150ms ease-in-out;
+      --transition-base: 300ms ease-in-out;
+      --transition-slow: 500ms ease-in-out;
+      
+      /* Shadows */
+      --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+      --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+      --shadow-glow: 0 0 10px;
+      
+      /* Z-index */
+      --z-index-dropdown: 100;
+      --z-index-sticky: 200;
+      --z-index-fixed: 300;
+      --z-index-modal: 400;
+      --z-index-tooltip: 500;
+    }
 
 
 *{
@@ -9,6 +62,8 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "poppins", sans-serif;
+    
 }
 
 /* Navigation Menu CSS */
@@ -69,8 +124,14 @@ nav .navbar .menu li a {
 }
 
 .Donate:hover{
-    transform: rotate(360deg); 
-    transition: 2s ease-in;
+    background-color: rgb(186, 11, 11);
+    box-shadow: 0 0 10px rgb(186, 11, 11);
+}
+.Donate:active{
+    color: rgb(186, 11, 11);
+    background-color: white;
+    box-shadow: 0 0 10px rgb(186, 11, 11);
+    
 }
 
 @keyframes stickyNav{
@@ -137,7 +198,7 @@ nav .navbar .menu li a {
 
 .segment h2{
     font-size: 2.1rem;
-    font-family: "Mulish", sans-serif;
+    
 }
 
 .segment button{
@@ -147,7 +208,7 @@ nav .navbar .menu li a {
     color: rgb(251, 255, 253);
     font-weight: 800;
     font-size: 1.1rem;
-    font-family: "Mulish", sans-serif;
+    
     background-color: rgb(225, 20, 20);
     border-radius: 1rem;
     border: none;
@@ -169,7 +230,7 @@ nav .navbar .menu li a {
 
 .message p{
     font-size: 0.95rem;
-    font-family: "Mulish", sans-serif;
+    
 }
 
 .about-img{
@@ -205,7 +266,7 @@ nav .navbar .menu li a {
     color: white;
     font-size: 0.9rem;
     font-weight: 800;
-    font-family: "Mulish", sans-serif;
+    
 
 }
 
@@ -219,7 +280,7 @@ nav .navbar .menu li a {
 
 #sermons  h2{
     text-align: center;
-    font-family: "Mulish", sans-serif;
+    
     font-size: 2rem;
     font-weight: 800;   
 }
@@ -229,7 +290,7 @@ nav .navbar .menu li a {
 }
 
  h4{
-    font-family: "Mulish", sans-serif;
+    
     font-size: 1.3rem;
     color: rgb(186, 11, 11);
     font-weight: 300;
@@ -249,14 +310,14 @@ nav .navbar .menu li a {
 }
 
 .infor h3{
-    font-family: "Mulish", sans-serif;
+    
     font-size: 2.5rem;
     font-weight: 500;
     word-spacing: 0.1rem;
     margin-bottom: 0.5rem;
 }
 .infor h3 p{
-    font-family: "Mulish", sans-serif;
+    
     font-weight: 100;
 
 }
@@ -268,7 +329,7 @@ nav .navbar .menu li a {
     color: white;
     font-size: 1.05rem;
     font-weight: 700;
-    font-family: "Mulish", sans-serif;
+    
     border-radius: 1.5rem;
     border: none;
     margin-top: 2rem;
@@ -322,13 +383,13 @@ nav .navbar .menu li a {
 #event h2{
     color: #fff;
     font-size: 2.6rem;
-    font-family: "Mulish", sans-serif;
+    
     font-weight: 800;
 }
 
 #event .note p{
     color: #fff;
-    font-family: "Mulish", sans-serif;
+    
     font-size: 1.1rem;
     line-height: 1.6rem;
     width: 40rem;
@@ -348,7 +409,7 @@ nav .navbar .menu li a {
     color: rgb(251, 255, 253);
     font-weight: 800;
     font-size: 1.1rem;
-    font-family: "Mulish", sans-serif;
+    
     background-color: rgb(161, 16, 16);
     border-radius: 1rem;
     border: none;
@@ -430,7 +491,7 @@ footer{
 }
 
 .youtube h2{
-    font-family: "Mulish", sans-serif;
+    
     display: flex;
     margin-top: 2rem;
     justify-content: center;
@@ -488,7 +549,7 @@ footer{
     font-weight: 800; 
     margin-right: auto;
     margin-left: auto;
-    font-family: "Mulish", sans-serif;
+    
     color: #fff;
 }
 
