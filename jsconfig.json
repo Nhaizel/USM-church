@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "target": "ES6",
+    "moduleResolution": "bundler",
+    "allowJs": true,
+    "checkJs": false,
+    "strict": false,
+    "ignoreDeprecations": "5.0"
+  },
+  "include": ["js/**/*"],
+  "exclude": ["node_modules", "**/*.min.js"]
+}

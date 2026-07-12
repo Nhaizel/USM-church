@@ -1,0 +1,40 @@
+{
+  "name": "usm-church-website",
+  "version": "2.0.0",
+  "description": "Modern, accessible church website with YouTube integration",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx serve",
+    "lint": "eslint js/**/*.js",
+    "format": "prettier --write \"**/*.{js,css,html,md}\"",
+    "lighthouse": "lighthouse http://localhost:8000 --view"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usmchurch/website.git"
+  },
+  "keywords": [
+    "church",
+    "website",
+    "youtube",
+    "accessible",
+    "responsive",
+    "vanilla-js"
+  ],
+  "author": "USM Church",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.3",
+    "lighthouse": "^11.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

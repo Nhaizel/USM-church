@@ -1,0 +1,44 @@
+# ESLint Configuration
+# Recommended ESLint configuration for the project
+
+root: true
+
+env:
+  browser: true
+  es2021: true
+
+extends:
+  - eslint:recommended
+
+parserOptions:
+  ecmaVersion: latest
+  sourceType: module
+
+rules:
+  # Best Practices
+  no-console: warn
+  no-unused-vars: warn
+  prefer-const: error
+  no-var: error
+
+  # ES6+
+  arrow-spacing: error
+  prefer-arrow-callback: warn
+  prefer-template: warn
+
+  # Code Quality
+  eqeqeq: error
+  no-eval: error
+  no-implied-eval: error
+  no-use-before-define: error
+
+  # Styling
+  indent: ['error', 2]
+  quotes: ['error', 'single']
+  semi: ['error', 'always']
+  comma-dangle: ['error', 'always-multiline']
+
+ignorePatterns:
+  - 'node_modules/'
+  - '*.min.js'
+  - '*-backup.*'

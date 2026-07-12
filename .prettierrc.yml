@@ -1,0 +1,35 @@
+# Prettier Configuration
+# Code formatting rules
+
+# Print width
+printWidth: 100
+
+# Use single quotes
+singleQuote: true
+
+# Always use semicolons
+semi: true
+
+# Trailing commas
+trailingComma: es5
+
+# Tab width
+tabWidth: 2
+
+# Use spaces
+useTabs: false
+
+# Arrow function parentheses
+arrowParens: always
+
+# Bracket spacing
+bracketSpacing: true
+
+# End of line
+endOfLine: lf
+
+# HTML whitespace sensitivity
+htmlWhitespaceSensitivity: css
+
+# Prose wrap
+proseWrap: preserve

@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "ritwickdey.liveserver",
+    "streetsidesoftware.code-spell-checker",
+    "formulahendry.auto-rename-tag",
+    "bradlc.vscode-tailwindcss",
+    "naumovs.color-highlight",
+    "pranaygp.vscode-css-peek",
+    "formulahendry.auto-close-tag",
+    "christian-kohler.path-intellisense"
+  ]
+}
